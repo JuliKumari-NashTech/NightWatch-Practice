@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="theInternet.internetPageTest"
+    errors="0" failures="0" hostname="" id="" package="internetPageTest" skipped="0"
+    tests="1" time="16.96" timestamp="">
+  
+    <testcase name="Click on A/B Testing" classname="theInternet.internetPageTest" time="4.807" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
