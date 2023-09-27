@@ -1,3 +1,4 @@
+
  //commands
  const internetCommands = {
           clickAbTestingLink : function (){
@@ -7,6 +8,12 @@
                           .click('@abTestingLink')
                           .waitForElementNotPresent('@abTestingLink')
                     
+          },
+          enterUsernameandPassword: function (username1, password1) {
+            return this
+              .setValue('@username', username1)
+              .setValue('@password', password1)
+             
           }
  };
 
@@ -24,7 +31,13 @@
             selector: "//ul//a[contains(text(),'A/B')]",
             locateStrategy : 'xpath'
         },
-        abTestPage : '.example'
+        abTestPage : '.example',
+        username: '#username',
+        password: '#password', 
+        formAuthentication:{
+          selector: "//a[normalize-space()='Form Authentication']",
+          locateStrategy: 'xpath'
+        }
         
    }
  };

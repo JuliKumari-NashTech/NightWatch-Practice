@@ -49,12 +49,19 @@ module.exports = {
       },
 
       desiredCapabilities: {
-        browserName: 'chrome'
+        browserName: 'chrome',
+
+        chromeOptions: {
+
+          args: ['--headless', '--no-sandbox']
+
+        }
       },
       
       webdriver: {
         start_process: true,
-        server_path: ''
+        server_path: '',
+        // port: 9515
       },
       
     },
@@ -71,14 +78,15 @@ module.exports = {
             //'--no-sandbox',
             //'--ignore-certificate-errors',
             //'--allow-insecure-localhost',
-            //'--headless'
+            // '--headless'
           ]
         }
       },
 
       webdriver: {
         start_process: true,
-        server_path: '',
+        server_path: 'node_modules/.bin/chromedriver',
+        port: 9515,
         cli_args: [
           // --verbose
         ]

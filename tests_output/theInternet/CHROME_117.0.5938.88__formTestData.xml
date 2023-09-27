@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="10"
+            failures="0"
+            tests="2">
+
+  <testsuite name="theInternet.formTestData"
+    errors="10" failures="0" hostname="" id="" package="formTestData" skipped="0"
+    tests="2" time="183.6" timestamp="">
+  
+    <testcase name="should log in with valid credentials" classname="theInternet.formTestData" time="46.52" assertions="0">
+    <error message="An error occurred while running .clearValue() command on &lt;#password&gt;: Timed out while waiting for element &#34;#password&#34; with &#34;css selector&#34; to be present for 5000 milliseconds." type="error"><![CDATA[
+    Error
+    at /home/knoldus/Documents/NightWatch-Practice/nightwatch/theInternet/formTestData.js:27:12
+    at Array.forEach (&lt;anonymous&gt;)
+    at DescribeInstance.&lt;anonymous&gt; (/home/knoldus/Documents/NightWatch-Practice/nightwatch/theInternet/formTestData.js:13:18)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+    {&#34;value&#34;:null,&#34;status&#34;:0}
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /home/knoldus/Documents/NightWatch-Practice/nightwatch/theInternet/formTestData.js:
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     20 |           .window.maximize()
+     21 |           .pause(3000)
+     22 |           .click(&#34;ul a[href=&#39;/login&#39;]&#34;) 
+     23 |           .setValue(&#39;#username&#39;, username)
+     24 |           .setValue(&#39;#password&#39;, password)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+    {&#34;value&#34;:null,&#34;status&#34;:0}
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /home/knoldus/Documents/NightWatch-Practice/nightwatch/theInternet/formTestData.js:
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     21 |           .pause(3000)
+     22 |           .click(&#34;ul a[href=&#39;/login&#39;]&#34;)
+     23 |           .setValue(&#39;#username&#39;, username) 
+     24 |           .setValue(&#39;#password&#39;, password)
+     25 |           .pause(2000)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+    {&#34;value&#34;:null,&#34;status&#34;:0}
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /home/knoldus/Documents/NightWatch-Practice/nightwatch/theInternet/formTestData.js:
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     22 |           .click(&#34;ul a[href=&#39;/login&#39;]&#34;)
+     23 |           .setValue(&#39;#username&#39;, username)
+     24 |           .setValue(&#39;#password&#39;, password) 
+     25 |           .pause(2000)
+     26 |           .clearValue(&#39;#username&#39;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+    {&#34;value&#34;:null,&#34;status&#34;:0}
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /home/knoldus/Documents/NightWatch-Practice/nightwatch/theInternet/formTestData.js:
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     24 |           .setValue(&#39;#password&#39;, password)
+     25 |           .pause(2000)
+     26 |           .clearValue(&#39;#username&#39;) 
+     27 |           .clearValue(&#39;#password&#39;)
+     28 |           .pause(2000)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+    {&#34;value&#34;:null,&#34;status&#34;:0}
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /home/knoldus/Documents/NightWatch-Practice/nightwatch/theInternet/formTestData.js:
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     25 |           .pause(2000)
+     26 |           .clearValue(&#39;#username&#39;)
+     27 |           .clearValue(&#39;#password&#39;) 
+     28 |           .pause(2000)
+     29 |          .end()
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+    {&#34;value&#34;:null,&#34;status&#34;:0}
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /home/knoldus/Documents/NightWatch-Practice/nightwatch/theInternet/formTestData.js:
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     20 |           .window.maximize()
+     21 |           .pause(3000)
+     22 |           .click(&#34;ul a[href=&#39;/login&#39;]&#34;) 
+     23 |           .setValue(&#39;#username&#39;, username)
+     24 |           .setValue(&#39;#password&#39;, password)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+    {&#34;value&#34;:null,&#34;status&#34;:0}
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /home/knoldus/Documents/NightWatch-Practice/nightwatch/theInternet/formTestData.js:
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     21 |           .pause(3000)
+     22 |           .click(&#34;ul a[href=&#39;/login&#39;]&#34;)
+     23 |           .setValue(&#39;#username&#39;, username) 
+     24 |           .setValue(&#39;#password&#39;, password)
+     25 |           .pause(2000)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+    {&#34;value&#34;:null,&#34;status&#34;:0}
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /home/knoldus/Documents/NightWatch-Practice/nightwatch/theInternet/formTestData.js:
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     22 |           .click(&#34;ul a[href=&#39;/login&#39;]&#34;)
+     23 |           .setValue(&#39;#username&#39;, username)
+     24 |           .setValue(&#39;#password&#39;, password) 
+     25 |           .pause(2000)
+     26 |           .clearValue(&#39;#username&#39;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+    {&#34;value&#34;:null,&#34;status&#34;:0}
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /home/knoldus/Documents/NightWatch-Practice/nightwatch/theInternet/formTestData.js:
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     24 |           .setValue(&#39;#password&#39;, password)
+     25 |           .pause(2000)
+     26 |           .clearValue(&#39;#username&#39;) 
+     27 |           .clearValue(&#39;#password&#39;)
+     28 |           .pause(2000)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+    {&#34;value&#34;:null,&#34;status&#34;:0}
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /home/knoldus/Documents/NightWatch-Practice/nightwatch/theInternet/formTestData.js:
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     25 |           .pause(2000)
+     26 |           .clearValue(&#39;#username&#39;)
+     27 |           .clearValue(&#39;#password&#39;) 
+     28 |           .pause(2000)
+     29 |          .end()
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

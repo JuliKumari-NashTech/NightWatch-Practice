@@ -11,7 +11,7 @@ describe("the internet page suites ", ()=>{
      it("Click on A/B Testing", ()=>{
             internetPage.clickAbTestingLink()
                         .pause(2000)
-                        .assert.textContains('@abTestPage', 'A/B Test Control')
+                        .assert.textContains('@abTestPage', 'A/B Test')
      })
      after(()=>{
         internetPage.end()

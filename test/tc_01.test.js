@@ -1,4 +1,10 @@
 module.exports ={
+   before: ()=>{
+        console.log("before ===================")
+   },
+   beforeEach: ()=>{
+      console.log("beforeEach ===================")
+ },
     '@tags' : ['heading'],
     // globally "browser" object is present
     'TC_01 -Verify heading contains the text': () =>{
@@ -19,5 +25,11 @@ module.exports ={
           .assert.textContains('.example', "A/B Test Control")
           .end();
           
-    }
+    },
+    afterEach: ()=>{
+      console.log("afterEach ===================")
+ },
+    after: ()=>{
+      console.log("after ===================")
+ }
 };
