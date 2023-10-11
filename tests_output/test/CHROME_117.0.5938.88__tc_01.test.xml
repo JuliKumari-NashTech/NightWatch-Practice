@@ -5,20 +5,20 @@
 
   <testsuite name="test.tc_01.test"
     errors="0" failures="1" hostname="" id="" package="tc_01.test" skipped="0"
-    tests="2" time="37.14" timestamp="">
+    tests="2" time="34.98" timestamp="">
   
-    <testcase name="TC_01 -Verify heading contains the text" classname="test.tc_01.test" time="7.380" assertions="2">
+    <testcase name="TC_01 -Verify heading contains the text" classname="test.tc_01.test" time="7.252" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="TC_02 - A/B Testing is present" classname="test.tc_01.test" time="11.19" assertions="3">
+    <testcase name="TC_02 - A/B Testing is present" classname="test.tc_01.test" time="10.24" assertions="3">
 
     
 
-      <failure message="Testing if element &lt;.example&gt; contains text &#39;A/B Test Control&#39; in 5000ms - expected &#34;contains text &#39;A/B Test Control&#39;&#34; but got: &#34;does not contain &#39;A/B Test Control&#39;&#34; (5366ms)">    at TC_02 - A/B Testing is present (/home/knoldus/Documents/NightWatch-Practice/test/tc_01.test.js:25:19)</failure>
+      <failure message="Testing if element &lt;.example&gt; contains text &#39;A/B Test Control&#39; in 5000ms - expected &#34;contains text &#39;A/B Test Control&#39;&#34; but got: &#34;does not contain &#39;A/B Test Control&#39;&#34; (5324ms)">    at TC_02 - A/B Testing is present (/home/knoldus/Documents/NightWatch-Practice/test/tc_01.test.js:25:19)</failure>
 
     
     </testcase>

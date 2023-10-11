@@ -1,22 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="0"
+<testsuites errors="1"
             failures="0"
             tests="1">
 
   <testsuite name="test.ddt.test"
-    errors="0" failures="0" hostname="" id="" package="ddt.test" skipped="0"
-    tests="1" time="14.18" timestamp="">
+    errors="1" failures="0" hostname="" id="" package="ddt.test" skipped="0"
+    tests="1" time="48.23" timestamp="">
   
-    <testcase name="use xpath" classname="test.ddt.test" time="7.090" assertions="3">
+    <testcase name="Verify the title of the page" classname="test.ddt.test" time="24.12" assertions="1">
 
     
-
-    
-
+    <error type="error"><![CDATA[
+    TimeoutError: done() callback timeout of 20000ms was reached while executing &#34;beforeEach&#34;. Make sure to call the done() callback when the operation finishes.
+    at Timeout._onTimeout (/home/knoldus/Documents/NightWatch-Practice/node_modules/nightwatch/dist/utils/timed-callback.js:44:23)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+    ]]></error>
     
     </testcase>
   
 
+  
+    <system-err>
+       TimeoutError
+   done() callback timeout of 20000ms was reached while executing &#34;beforeEach&#34;. Make sure to call the done() callback when the operation finishes.
+ TimeoutError
+   done() callback timeout of 20000ms was reached while executing &#34;beforeEach&#34;. Make sure to call the done() callback when the operation finishes.
+    </system-err>
   
 
     

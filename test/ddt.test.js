@@ -18,7 +18,7 @@ describe("DDT Testing", ()=>{
           console.log("1.DDT------------------")
   });
   
-  it("Verify the title of the page", ()=>{
+  it.only("Verify the title of the page", ()=>{
 
      browser.assert.titleEquals("The Internet")
    
@@ -62,7 +62,7 @@ describe("DDT Testing", ()=>{
       .pause(3000)
       .assert.textContains('#result',"Ok")
  });
- it.only("use xpath",()=>{
+ it("use xpath",()=>{
           browser
            .useXpath()
            .click("//ul//a[text()='Checkboxes']")

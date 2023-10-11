@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="test.typescript"
+    errors="1" failures="0" hostname="" id="" package="typescript" skipped="1"
+    tests="0" time="0.001000" timestamp="">
+  
+
+  
+    <system-err>
+       An error occurred while creating a new GeckoDriver session: [InvalidArgumentError] Invalid moz:firefoxOptions field w3c
+  Verify if GeckoDriver is configured correctly; using:
+  {
+     start_process: true,
+     server_path: &#39;node_modules/.bin/geckodriver&#39;,
+     port: 4444,
+     host: &#39;localhost&#39;,
+     ssl: false,
+     default_path_prefix: &#39;&#39;,
+     proxy: undefined,
+     cli_args: []
+  }
+
+ 
+  More info might be available in the log file: /home/knoldus/Documents/NightWatch-Practice/logs/test/typescript_geckodriver.log
+    </system-err>
+  
+
+    
+    <error message="An error occurred while creating a new GeckoDriver session: [InvalidArgumentError] Invalid moz:firefoxOptions field w3c"><![CDATA[
+      InvalidArgumentError: An error occurred while creating a new GeckoDriver session: [InvalidArgumentError] Invalid moz:firefoxOptions field w3c
+    at Object.throwDecodedError (/home/knoldus/Documents/NightWatch-Practice/node_modules/selenium-webdriver/lib/error.js:524:15)
+    at parseHttpResponse (/home/knoldus/Documents/NightWatch-Practice/node_modules/selenium-webdriver/lib/http.js:601:13)
+    at Executor.execute (/home/knoldus/Documents/NightWatch-Practice/node_modules/selenium-webdriver/lib/http.js:529:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      ]]></error>  
+
+  
+    
+    <testcase
+      name="First Test" classname="test.typescript">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

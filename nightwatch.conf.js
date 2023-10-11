@@ -50,20 +50,39 @@ module.exports = {
 
       desiredCapabilities: {
         browserName: 'chrome',
-
         chromeOptions: {
-
           args: ['--headless', '--no-sandbox']
-
         }
       },
       
       webdriver: {
         start_process: true,
-        server_path: '',
-        // port: 9515
+        server_path: ''
       },
       
+    },
+    
+    firefox: {
+      desiredCapabilities: {
+        browserName: 'firefox',
+        alwaysMatch: {
+          acceptInsecureCerts: true,
+          'moz:firefoxOptions': {
+            args: [
+              // '-headless',
+              // '-verbose'
+            ]
+          }
+        }
+      },
+      webdriver: {
+        start_process: true,
+        server_path: '',
+        cli_args: [
+          // very verbose geckodriver logs
+          // '-vv'
+        ]
+      }
     },
     
     chrome: {
@@ -75,18 +94,40 @@ module.exports = {
           // w3c:false tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
           w3c: true,
           args: [
-            //'--no-sandbox',
+            '--no-sandbox',
             //'--ignore-certificate-errors',
             //'--allow-insecure-localhost',
-            // '--headless'
+            '--headless'
           ]
         }
       },
 
       webdriver: {
         start_process: true,
-        server_path: 'node_modules/.bin/chromedriver',
-        port: 9515,
+        server_path: '',
+        cli_args: [
+          // --verbose
+        ]
+      }
+    },
+    
+    edge: {
+      desiredCapabilities: {
+        browserName: 'MicrosoftEdge',
+        'ms:edgeOptions': {
+          w3c: true,
+          // More info on EdgeDriver: https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/capabilities-edge-options
+          args: [
+            //'--headless'
+          ]
+        }
+      },
+
+      webdriver: {
+        start_process: true,
+        // Follow https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/?tabs=c-sharp#download-microsoft-edge-webdriver
+        // to download the Edge WebDriver and set the location of extracted `msedgedriver` below:
+        server_path: '',
         cli_args: [
           // --verbose
         ]
@@ -98,7 +139,7 @@ module.exports = {
   usage_analytics: {
     enabled: true,
     log_path: './logs/analytics',
-    client_id: 'ce516afd-418c-4245-8d96-3915cd20b2b2'
+    client_id: 'bb9f4ee3-300a-4137-95c0-6b6ff38d2d28'
   }
   
 };
